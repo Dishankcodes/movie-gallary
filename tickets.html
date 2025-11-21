@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+	</head>
+    <style>
+        label{
+		font-weight: bold;
+		}
+		body{
+		font-family: Arial, sans-serif;
+		background-image:url('S5.jpg');
+		background-size:1200px;
+		margin: 20px;
+		}
+		form{
+		background:white;
+        padding: 20px;	
+		margin: auto;
+		max-width:400px;
+		}
+		button:hover{
+		color:blue;
+		}
+		input{
+		padding:10px;
+		width: 100%;
+		}
+#d{
+margin-top:50px;
+}
+nav a{
+text-decoration:none;
+margin-top:10px;
+text-align:center;
+color:black;
+padding:10px;
+}
+a:hover{
+color:red;
+}
+a:link{
+color:black;
+}
+a{
+background-color:beige;
+color:black;
+}
+#b{
+background-color:brown;
+}
+
+	</style>
+<body>
+
+
+<h1 style="color:white;"> <center>BOOK YOUR MOVIE TICKETS</center></h1>
+<center>
+<div id="b">
+<nav> 
+<a href="home.html"> Home </a> &nbsp;
+<a href="video.html"> Clips  </a> &nbsp;
+<a href="table.html"> Budget & Collection </a> &nbsp; 
+<a href="tickets.html"> Buy Tickets </a> &nbsp; 
+
+</nav>
+</div>
+</center>
+<div id="d">
+<form>
+<div>
+<label for="name" >First name:</label><br><br>
+        <input type="text" name="Movies" placeholder="Enter your first name"><br><br>
+<label for="last name" >Last name:</label><br><br>
+        <input type="text" name="Movies" placeholder="Enter your last name"><br><br>
+<label for="Movies" >Select Movies:</label><br><br>
+<select id="movie" name="movie" required>
+            <option value="">--Select a movie--</option>
+            <option value="movie1"> PIRATES CARIBBEAN</option>
+            <option value="movie2"> CITY OF EMBER</option>
+            <option value="movie3"> JOKER</option>
+			<option value="movie3"> TITANIC</option>
+			<option value="movie3"> THE GOD FATHER</option>
+        </select>
+        <br><br>
+		<label for="Movies" >Select Movies Category:</label>
+    <br>
+  <label>
+    <input type="radio" name="options" value="option1"> Advanture
+  </label>
+  <label>
+    <input type="radio" name="options" value="option2"> Thriller
+  </label>
+  <label>
+    <input type="radio" name="options" value="option3"> Crime
+  </label><br><br>
+  <hr>
+<label for="date">  Select Date:</label>
+<label for="date">  Select Date:</label>
+        <input type="date" name="date"><br><br>
+<label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" min="1" max="10" required><br><br>
+		<center><button style="background:black; color:white; border: none;" type="submit">Book Tickets</button></center>
+</form>
+</div>
+
+<a href="home.html" style="margin-left:1000px; background-color:white;"> GO TO HOME </a>
+</body>
+</html>
